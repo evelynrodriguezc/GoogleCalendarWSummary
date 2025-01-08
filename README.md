@@ -49,6 +49,19 @@ It's recommended to use PM2 for production:
 npm install -g pm2
 pm2 start index.js --name "calendar-summary"
 ```
+Just in case you have to stop the instance (receiving emails every minute) use:
+# List all running processes
+pm2 list
+
+# Stop the calendar summary process
+pm2 stop calendar-summary
+
+# Delete it from PM2
+pm2 delete calendar-summary
+
+# To be thorough, list all processes again to verify
+pm2 list
+
 
 ## Environment Variables
 
