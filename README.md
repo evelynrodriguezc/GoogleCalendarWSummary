@@ -50,7 +50,8 @@ npm install -g pm2
 pm2 start index.js --name "calendar-summary"
 ```
 Just in case you have to stop the instance (receiving emails every minute) use:
-# List all running processes
+List all running processes
+```bash
 pm2 list
 
 # Stop the calendar summary process
@@ -61,7 +62,7 @@ pm2 delete calendar-summary
 
 # To be thorough, list all processes again to verify
 pm2 list
-
+```
 
 ## Environment Variables
 
